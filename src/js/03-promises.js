@@ -9,12 +9,12 @@ function createPromise(position, delay) {
     
     setTimeout(() => {
       if (shouldResolve) {
-        resolve(Notiflix.Notify.success(`✅ Fulfilled promise ${position} in ${delay}ms`, {
+        resolve(Notiflix.Notify.success(`Fulfilled promise ${position} in ${delay}ms`, {
           position: 'center-top',
           distance: '120px',
         }));
       } else {
-        reject(Notiflix.Notify.failure(`❌ Rejected promise ${position} in ${delay}ms`, {
+        reject(Notiflix.Notify.failure(`Rejected promise ${position} in ${delay}ms`, {
           position: 'center-top',
           distance: '120px',
         }));
