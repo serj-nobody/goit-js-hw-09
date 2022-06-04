@@ -10,6 +10,8 @@ const refs = {
   secondsDisplay: document.querySelector('[data-seconds]'),
 }
 
+
+
 const options = {
   enableTime: true,
   enableSeconds: true,
@@ -34,6 +36,7 @@ const options = {
 
 const dateTimePicker = flatpickr("#datetime-picker", options);
 
+refs.startButton.disabled = true;
 refs.startButton.addEventListener('click', onStartButtonCLick);
 
 let intervalId;
